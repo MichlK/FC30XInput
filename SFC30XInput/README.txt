@@ -1,3 +1,20 @@
+Fork notes:
+
+This quick fork was created for the FC30 PRO (and NES30 PRO) game controller by 8bitdo - http://8bitdo.com/fc30pro/ - to map the analogue sticks and additional buttons in Bluetooth mode. Tested with firmware 1.68 - works fine!
+
+Installation / usage:
+# Download and start DS4Windows, so that the driver for the X360bus is installed: http://ds4windows.com/
+# Power the FC30 Pro game controller on in default mode (by just pushing the power button; without a USB-cable plugged in)
+# Make sure the controller is paired with your computer
+# Open the application, select the controller & the button layout and start the emulation
+# Have fun...
+
+BTW: I included a dirty fix - Thread.sleep(1) - so that polling the DirectInput data does not consume a CPU core... :-)
+
+--------------------------
+
+Original readme by ROFISH:
+
 This is an early release of an app that converts DirectInput commands into XInput commands for the FC30 controllers.
 
 Why would you do this? Well, many games now just use XInput instead of looking at DirectInput. And why would you blame them? It prefills known buttons and works immediately for Microsoft's controllers. As an out-of-the-box gaming experience, it's pretty great. I have one myself.
